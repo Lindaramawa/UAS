@@ -1,15 +1,15 @@
-from tkinter import *
-from tkinter import messagebox
-import random
+from tkinter import * //mengambil semua yang ada di library tkinter
+from tkinter import messagebox // mengambil messagebox dari library tkinter
+import random // mengambil libabry random
 
 #peluang dan angka acak
 peluang = 10
 x = random.randint(1,100)
 
 
-root = Tk()
+root = Tk() // 
 
-root.config(background='light blue')
+root.config(background='light blue') // pengaturan background dari windows
 
 label = Label(text="Permainan", font="Normal 30", background='light blue')
 label.grid(row=0, column=0, columnspan=2)
