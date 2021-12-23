@@ -11,20 +11,20 @@ root = Tk() //
 
 root.config(background='light blue') // pengaturan background dari windows
 
-label = Label(text="Permainan", font="Normal 30", background='light blue')
-label.grid(row=0, column=0, columnspan=2)
+label = Label(text="Permainan", font="Normal 30", background='light blue') //Pengaturan label terdiri dari : teks, font, dan background
+label.grid(row=0, column=0, columnspan=2) // pengaturan letak label
 
-data = Entry(font="Normal 30", bd=10)
-data.grid(row=1, column=0)
+data = Entry(font="Normal 30", bd=10) // pengaturan tempat pengetikan 
+data.grid(row=1, column=0) // pengaturan letak pengetikan
 
-def perintah():
-    print(data.get())
-    data.delete(0, END)
+def perintah(): // hasil dari pengetikan
+    print(data.get()) // akan diprint
+    data.delete(0, END) // akan didelete di dalam pengetikan
 
-button = Button(text="Klik", font="Normal 20", 
+button = Button(text="Klik", font="Normal 20", //pengaturan button seperti text, font, background ketika diklik, dan aksi dari button tersebut
 activebackground="red", command=perintah)
-button.grid(row=1, column=1)
+button.grid(row=1, column=1) // pengaturan letak button
 
-teks = Text(width=50, height=50, bd=10, font="Normal 15")
-teks.grid(row=2, column=0, columnspan=2)
-root.mainloop()
+teks = Text(width=50, height=50, bd=10, font="Normal 15") // pengaturan text seperti width, height, background, dan font
+teks.grid(row=2, column=0, columnspan=2) // pengaturan letak teks
+root.mainloop() // menjalankan program 
